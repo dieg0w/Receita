@@ -1,0 +1,96 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #fff;
+  }
+  
+  ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #666;
+  }
+  
+  ol li:before {
+    content: counter(item);
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #666;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
+  ol {
+    counter-reset: item;
+  }
+  
+  ol li {
+    counter-increment: item;
+  }
+  
+  h2 + ul, h2 + ol {
+    margin-top: 20px;
+  }
+  
+  h2 + ul li, h2 + ol li {
+    margin-bottom: 20px;
+  }
+  
+  /* Adicionado */
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2, ul, ol {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
